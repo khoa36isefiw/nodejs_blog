@@ -1,31 +1,35 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "first application",
-  "main": "index.js",
-  "scripts": {
-    "start":"nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/khoa36isefiw/nodejs_blog.git"
-  },
-  "keywords": [
-    "f8",
-    "blog",
-    "nodejs"
-  ],
-  "author": "luanlord",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/khoa36isefiw/nodejs_blog/issues"
-  },
-  "homepage": "https://github.com/khoa36isefiw/nodejs_blog#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "first application",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "node-sass --watch src/resources/scss/app.scss --output src/public/css/app.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/khoa36isefiw/nodejs_blog.git"
+    },
+    "keywords": [
+        "f8",
+        "blog",
+        "nodejs"
+    ],
+    "author": "luanlord",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/khoa36isefiw/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/khoa36isefiw/nodejs_blog#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "express-handlebars": "^7.0.7"
+    },
+    "devDependencies": {
+        "morgan": "^1.10.0",
+        "node-sass": "^9.0.0",
+        "nodemon": "^2.0.22"
+    }
 }
