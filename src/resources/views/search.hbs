@@ -1,0 +1,35 @@
+<div class="mt-4">
+    {{!-- action này là nơi mình muốn nó submit tại đâu --}}
+    {{!-- khi search và submit thì nó sẽ href sang trang news để tìm kiếm --}}
+    <form method="POST" action="">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Từ Khóa</label>
+            <input type="text" name="q" class="form-control" id="email-input"  placeholder="Nhập từ khóa để tìm kiếm">
+        </div>
+
+         <div class="gender-group">
+            <label for="exampleInputEmail1">Chọn</label>
+            <select name="gender" class="form-control" id="gender-input"  > 
+                <option value="">-- Chọn giới tính --</option>
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+            </select>
+        </div>
+
+        {{!-- <div class="form-group">
+            <label for="exampleInputEmail1">Tên</label>
+            <input type="text" name="name" class="form-control" id="exampleInputEmail1"  placeholder="Nhập tên">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Tuổi</label>
+            <input type="number" name="age" class="form-control" id="exampleInputEmail1"  placeholder="Nhập tuổi">
+        </div>
+         --}}
+
+
+
+
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
