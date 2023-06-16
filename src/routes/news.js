@@ -8,9 +8,9 @@ const router = express.Router();
 const newsController = require('../app/controllers/NewsController');
 
 // cấu hình get('/path')
-    router.use('/:slug', newsController.showNewsDetails);
+router.get('/:slug', newsController.showNewsDetails);
 
-// luôn luô nằm dưới cùng
-router.use('/', newsController.index); // tuyến đường của nó
+// '/' luôn luôn nằm dưới cùng
+router.get('/', newsController.index); // tuyến đường của nó
 
 module.exports = router;

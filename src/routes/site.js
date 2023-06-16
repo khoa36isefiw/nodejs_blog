@@ -9,9 +9,9 @@ const siteController = require('../app/controllers/SiteController');
 
 // cấu hình get('/path')
 //slug
-router.use('/search', siteController.search);
+router.get('/search', siteController.search);
 
 // luôn luô nằm dưới cùng
-router.use('/', siteController.index); // tuyến đường của nó
+router.get('/', siteController.index); // tuyến đường của nó
 
 module.exports = router;

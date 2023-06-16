@@ -4,7 +4,7 @@
     "description": "first application",
     "main": "src/index.js",
     "scripts": {
-        "beautiful": "lint-staged",
+        "beautiful": "prettier --single-quote --trailing-comma all --write \"src/**/*.{js,json,scss}\"",
         "start": "nodemon --inspect src/index.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "node-sass --watch src/resources --output src/public"
@@ -26,15 +26,9 @@
     "homepage": "https://github.com/khoa36isefiw/nodejs_blog#readme",
     "dependencies": {
         "express": "^4.18.2",
-        "express-handlebars": "^7.0.7"
-    },
-    "lint-staged": {
-        "'*.{js,json,scss}'": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+        "express-handlebars": "^7.0.7",
+        "mongoose": "^7.2.3",
+        "mongoose-slug-generator": "^1.0.4"
     },
     "devDependencies": {
         "husky": "^8.0.3",
